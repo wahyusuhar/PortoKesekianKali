@@ -130,8 +130,6 @@
        
         
     </nav>
-    
-
     <div class="container-fluid hero-header" id="section1">
       <video
           id="myVideo"
@@ -157,8 +155,13 @@
               font-size: 3rem;
               color: white;
               cursor: pointer;
-              z-index: 100;
+              z-index: -1;
           "></i>
+
+          <!-- Clickable Overlay -->
+<div id="clickableOverlay" 
+style="position: absolute; top: 70px; left: 0; width: 100%; height: 100%; z-index: 99; cursor: pointer;"></div>
+
   
       <div class="container py-5">
           <div class="row justify-content-center py-5">
@@ -168,7 +171,6 @@
           </div>
       </div>
   </div>
-  
     
   </div>
   
@@ -203,55 +205,27 @@
               Selamat Datang di <span style="color: #006BFF;">Web Saya</span>
             </h1>
             <p class="mb-4">
-              Saya Hifni Wafi Abiya Achmad, seorang fotografer profesional
-              sekaligus pemandu lokal. Saya memiliki pengalaman bertahun-tahun
-              dalam menangkap momen indah dan membantu wisatawan menjelajahi
-              tempat-tempat terbaik di daerah lokal saya.
+              Saya Hifni, seorang freelance fotografer sekaligus lokal guide. Saya memiliki pengalaman dalam mengabadikan momen indah dan membantu wisatawan menjelajahi tempat-tempat terbaik di daerah lokal dieng.
             </p>
-            <p class="mb-4">
-              Dengan mata yang terlatih untuk fotografi dan pengetahuan mendalam
-              tentang tempat-tempat wisata lokal, saya siap memandu Anda melalui
-              petualangan yang tak terlupakan, sambil mendokumentasikan setiap
-              momen berharga yang Anda alami.
-            </p>
+          
             <div class="row gy-2 gx-4 mb-4">
-              <div class=" col-sm-6">
+              <div class="col-12">
                 <p class="mb-0">
-                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>Fotografer
-                  Profesional
+                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>freelance dokumentasi
                 </p>
               </div>
-              <div class="col-sm-6">
+              <div class="col-12">
                 <p class="mb-0">
-                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>Pemandu
-                  Lokal Berpengalaman
+                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>freelance lokal guide
                 </p>
               </div>
-              <div class="col-sm-6">
+              <div class="col-12">
                 <p class="mb-0">
-                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>Destinasi
-                  Lokal Terbaik
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>Layanan Tur
-                  Pribadi
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>Paket
-                  Fotografi Khusus
-                </p>
-              </div>
-              <div class="col-sm-6">
-                <p class="mb-0">
-                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>Layanan
-                  24/7
+                  <i class="fa fa-arrow-right me-2" style="color: #006BFF;"></i>privat tour
                 </p>
               </div>
             </div>
+            
             <!-- <a class="btn py-3 px-5 mt-2" style="background-color: #006BFF; color: aliceblue; border-radius: 5px;" href=""
               >Baca Selengkapnya</a
             > -->
@@ -750,6 +724,22 @@
               style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white; cursor: pointer;"
             ></i>
           </div>
+          <div class="video-container bg-white text-center border p-4" style="position: relative;">
+            <video
+              class="video-player bg-white shadow  mx-auto "
+              src="video/Video testi/video6.mp4"
+              style="width: 100%; height: 470px; object-fit: cover;"
+            
+            
+              playsinline
+              muted
+            ></video>
+            <i
+              class="play-pause-icon fa fa-play-circle"
+              style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem; color: white; cursor: pointer;"
+            ></i>
+          </div>
+       
           
 
         
@@ -799,10 +789,10 @@ style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); 
               Indonesia
             </p>
             <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+62 812 345 67890
+              <i class="fa fa-phone-alt me-3"></i>+62896-0363-8254
             </p>
             <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@wisatawonosobo.com
+              <i class="fa fa-envelope me-3"></i>hifnii.abiyya03@gmail.com
             </p>
             <div class="d-flex pt-2">
               <a class="btn btn-outline-light btn-social" href=""

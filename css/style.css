@@ -586,6 +586,43 @@ h1 .title {
   transform: scale(1.1);
 }
 
+
+
+/* Style untuk gambar yang tampil penuh saat checkbox dicentang */
+.toggle-fullscreen {
+  display: none; /* Sembunyikan checkbox asli */
+}
+
+
+
+/* Style label untuk memastikan gambar bisa diklik */
+label {
+  display: block;
+  cursor: pointer; /* Menunjukkan bahwa gambar bisa diklik */
+}
+
+/* Media query untuk perangkat mobile */
+@media (max-width: 768px) {
+  .package-item img {
+      cursor: pointer; /* Menampilkan pointer saat gambar diklik */
+  }
+
+  .toggle-fullscreen:checked + label img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain; /* Gambar akan menutupi layar penuh tanpa terdistorsi */
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8); /* Latar belakang gelap */
+    cursor: zoom-out; /* Menunjukkan gambar bisa diklik untuk kembali */
+  }
+
+}
+
+
+
 /*** Booking ***/
 .booking {
   background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)),
